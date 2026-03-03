@@ -79,8 +79,6 @@ if(LIBCMAES_BUILD_PYTHON)
 endif()
 
 
-find_package (Eigen 5.0.0 REQUIRED)
-
 if (LIBCMAES_USE_OPENMP)
   find_package (OpenMP QUIET)
   if(NOT OpenMP_CXX_FOUND)
