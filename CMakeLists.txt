@@ -78,6 +78,8 @@ if(LIBCMAES_BUILD_PYTHON)
   endif ()
 endif()
 
+find_package( Eigen3 REQUIRED )
+include_directories( ${EIGEN3_INCLUDE_DIR} )
 
 if (LIBCMAES_USE_OPENMP)
   find_package (OpenMP QUIET)
