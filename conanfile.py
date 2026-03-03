@@ -23,6 +23,8 @@ class CmaesConan(ConanFile):
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
+    
+    generators = "cmake"
     options = {
         "shared": [True, False],
         "openmp": [True, False],
