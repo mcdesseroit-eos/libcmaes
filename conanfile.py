@@ -55,6 +55,7 @@ class CmaesConan(ConanFile):
             self.test_requires("boost/1.85.0")
 
     def requirements(self):
+        self.requires("eigen/5.0.0")
         if self.options.openmp and self.settings.os != "Windows":
             self.requires("llvm-openmp/17.0.6", transitive_headers=True)
 
